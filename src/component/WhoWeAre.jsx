@@ -13,7 +13,7 @@ const WhoWeAre = () => {
       icon: <Layers size={40} color="white" />,
       bgColor: "bg-blue-500 dark:bg-blue-700",
       iconBg: "bg-blue-200 dark:bg-blue-800",
-      textColor: "text-blue-800 dark:text-blue-200"
+      
     },
     {
       id: 2,
@@ -22,7 +22,6 @@ const WhoWeAre = () => {
       icon: <Smile size={40} color="white" />,
       bgColor: "bg-purple-500 dark:bg-purple-700",
       iconBg: "bg-purple-200 dark:bg-purple-800",
-      textColor: "text-purple-800 dark:text-purple-200"
     },
     {
       id: 3,
@@ -31,7 +30,6 @@ const WhoWeAre = () => {
       icon: <Bell size={40} color="white" />,
       bgColor: "bg-pink-500 dark:bg-pink-700",
       iconBg: "bg-pink-200 dark:bg-pink-800",
-      textColor: "text-pink-800 dark:text-pink-200"
     },
     {
       id: 4,
@@ -40,7 +38,6 @@ const WhoWeAre = () => {
       icon: <Crown size={40} color="white" />,
       bgColor: "bg-yellow-500 dark:bg-yellow-700",
       iconBg: "bg-yellow-200 dark:bg-yellow-800",
-      textColor: "text-yellow-800 dark:text-yellow-200"
     },
   ];
 
@@ -63,7 +60,7 @@ const WhoWeAre = () => {
 
         {/* Text Content */}
         <div className="space-y-6 text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400 dark:from-pink-300 dark:to-orange-200">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#f52e98] to-[#f87d3b] inline-block ">
             Exploring the Core of Physio Therapist
           </h2>
           <div className="h-1 bg-gradient-to-r from-pink-500 to-orange-400 dark:from-pink-300 dark:to-orange-200 w-24 mx-auto md:mx-0 mb-6"></div>
@@ -97,7 +94,7 @@ const WhoWeAre = () => {
 
       {/* Responsive Card Section */}
       <div className="mt-16 mb-8">
-        <h3 className="text-center text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8">
+        <h3 className="text-center text-3xl font-bold bg-gradient-to-r from-pink-500 to-orange-500 bg-clip-text text-transparent mb-8">
           Our Core Values
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
@@ -115,7 +112,7 @@ const WhoWeAre = () => {
               </div>
 
               {/* Title */}
-              <h4 className={`font-bold text-lg mb-3 ${card.textColor}`}>
+              <h4 className={`font-bold text-lg text-pink-600 dark:text-pink-300 mb-3 ${card.textColor}`}>
                 {card.title}
               </h4>
 

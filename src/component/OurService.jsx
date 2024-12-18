@@ -24,7 +24,7 @@ const OurServices = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 px-6 py-12 text-center" id="ourServices">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-[#f52e98] to-[#f87d3b] inline-block text-transparent bg-clip-text">
+      <h2 className="text-3xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-pink-500 to-orange-500 bg-clip-text text-transparent">
         Our Services
       </h2>
 

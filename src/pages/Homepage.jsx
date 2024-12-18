@@ -117,18 +117,19 @@ const Homepage = () => {
         <ContactUs />
         <Footer />
         <button
-          onClick={toggleDarkMode}
-          className="fixed top-4 right-4 
+  onClick={toggleDarkMode}
+  className="fixed top-4 
+    right-[23%] 
+    
     bg-gradient-to-r from-green-400 to-blue-500
     text-white
     p-3 rounded-full shadow-lg 
     hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-400
     transition transform hover:scale-110 z-50"
-          aria-label="Toggle dark mode"
-        >
-          {darkMode ? <Sun size={24} /> : <Moon size={24} />}
-        </button>
-
+  aria-label="Toggle dark mode"
+>
+  {darkMode ? <Sun size={24} /> : <Moon size={24} />}
+</button>
         {/* Scroll to Top Button */}
         <ScrollToTopButton />
       </div>

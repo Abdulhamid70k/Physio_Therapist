@@ -49,7 +49,7 @@ const OurFacilities = () => {
 
   return (
     <section id="ourFacilities" className="text-center py-10 bg-gray-50 dark:bg-gray-900">
-      <h2 className="text-2xl font-bold border border-transparent px-5 py-2 border-gradient bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
+      <h2 className="text-4xl font-bold border border-transparent px-5 py-2 border-gradient bg-gradient-to-r from-pink-500 to-orange-400 text-transparent bg-clip-text">
         Our Facilities
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-center mt-8 px-5">
