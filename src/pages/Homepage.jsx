@@ -120,16 +120,25 @@ const Homepage = () => {
   onClick={toggleDarkMode}
   className="fixed top-4 
     right-[23%] 
-    
-    bg-gradient-to-r from-green-400 to-blue-500
-    text-white
+    bg-transparent
     p-3 rounded-full shadow-lg 
-    hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-400
-    transition transform hover:scale-110 z-50"
+    border-2 border-transparent 
+    bg-gradient-to-r from-pink-500 to-orange-500
+    hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500
+    hover:scale-110 
+    transition transform z-50
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+  style={{
+    backgroundClip: 'padding-box',
+    WebkitBackgroundClip: 'text',
+    backgroundImage: 'linear-gradient(to right, pink, orange)',
+    boxShadow: '0 0 0 2px transparent',
+  }}
   aria-label="Toggle dark mode"
 >
   {darkMode ? <Sun size={24} /> : <Moon size={24} />}
 </button>
+
         {/* Scroll to Top Button */}
         <ScrollToTopButton />
       </div>
