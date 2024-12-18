@@ -44,7 +44,7 @@ const OurServices = () => {
                   alt={service.title}
                   className="rounded-lg mb-4 w-full h-32 object-cover"
                 />
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{service.title}</h3>
+                <h3 className="text-lg font-semibold text-pink-600 dark:text-pink-300">{service.title}</h3>
               </div>
 
               {/* Back Side */}

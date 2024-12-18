@@ -80,11 +80,10 @@ const Homepage = () => {
       <button
         onClick={scrollToTop}
         className="fixed bottom-6 right-6 
-          bg-blue-600 text-white 
+       bg-gradient-to-r from-pink-500 to-orange-500 text-white 
           p-3 rounded-full shadow-lg 
-          hover:bg-blue-700
           transition transform hover:scale-110
-          animate-bounce"
+          animate-bounce z-50"
         aria-label="Scroll to top"
       >
         <ArrowUp />
@@ -94,7 +93,7 @@ const Homepage = () => {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen overflow-x-hidden">
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen overflow-x-hidden relative">
         <Navbar
           scrollToSection={scrollToSection}
           featuresRef={featuresRef}
@@ -103,19 +102,28 @@ const Homepage = () => {
         />
         <PhysioTherapist />
         <WhoWeAre />
-        <OurServices scrollToSection={scrollToSection} featuresRef={featuresRef} />
-        <OurFacilities scrollToSection={scrollToSection} testimonialRef={testimonialRef} />
-        <FeedbackSection scrollToSection={scrollToSection} pricingRef={pricingRef} />
+        <OurServices
+          scrollToSection={scrollToSection}
+          featuresRef={featuresRef}
+        />
+        <OurFacilities
+          scrollToSection={scrollToSection}
+          testimonialRef={testimonialRef}
+        />
+        <FeedbackSection
+          scrollToSection={scrollToSection}
+          pricingRef={pricingRef}
+        />
         <ContactUs />
         <Footer />
         <button
           onClick={toggleDarkMode}
-          className="fixed bottom-6 left-6 
-            bg-gray-200 dark:bg-gray-700 
-            text-gray-800 dark:text-gray-200 
-            p-3 rounded-full shadow-lg 
-            hover:bg-gray-300 dark:hover:bg-gray-600
-            transition transform hover:scale-110"
+          className="fixed top-4 right-4 
+    bg-gradient-to-r from-green-400 to-blue-500
+    text-white
+    p-3 rounded-full shadow-lg 
+    hover:bg-gradient-to-r hover:from-blue-500 hover:to-green-400
+    transition transform hover:scale-110 z-50"
           aria-label="Toggle dark mode"
         >
           {darkMode ? <Sun size={24} /> : <Moon size={24} />}

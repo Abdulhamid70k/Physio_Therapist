@@ -1,19 +1,20 @@
 import React from "react";
 import { Home, MapPin, Laptop } from "lucide-react";
 import Img1 from "../assets/Images/img1.png";
+import Img1BackgroundPinkMist from "../assets/Images/backgroundSVG1.svg";
 
 const PhysioTherapist = () => {
   return (
-    <div className="bg-lightBg py-4 dark:bg-darkBg text-lightText dark:text-darkText min-h-screen">
+    <div className="bg-lightBg  dark:bg-darkBg text-lightText dark:text-darkText min-h-screen">
       {/* Carousel Section */}
-      <div className="w-full overflow-hidden mt-[90px]">
+      <div className="w-full overflow-hidden mt-[80px]">
         <div className="flex justify-center items-center">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-full mx-auto">
             {/* Left Section */}
             <div className="bg-lightBg dark:bg-darkBg p-5 md:p-20">
               <div className="max-w-[500px]">
-                <div className="inline-block bg-gradient-to-r from-pink-500 to-orange-500 text-transparent bg-clip-text mb-4">
-                  <h1 className="text-2xl md:text-4xl font-bold text-[#143350] dark:text-darkText">
+                <div className="inline-block bg-gradient-to-r from-pink-500 to-orange-500  text-transparent bg-clip-text mb-4">
+                  <h1 className="text-2xl md:text-4xl font-bold text-gradient-to-r from-pink-500 to-orange-500 bg-clip-text">
                     Shaping Paradigm of your Personal Wellbeing
                   </h1>
                 </div>
@@ -46,7 +47,13 @@ const PhysioTherapist = () => {
 
             {/* Right Section */}
             <div className="relative flex justify-center items-center">
-              <div className="absolute inset-0 bg-[url('/carouselImage.png')] bg-cover bg-center z-0 opacity-50 dark:opacity-30"></div>
+              {/* Mist Background */}
+              <img
+                src={Img1BackgroundPinkMist}
+                alt="background-mist"
+                className="absolute inset-0 w-full h-full object-cover z-0 opacity-50 dark:opacity-30"
+              />
+              {/* Foreground Image */}
               <img
                 src={Img1}
                 alt="carousel-1"

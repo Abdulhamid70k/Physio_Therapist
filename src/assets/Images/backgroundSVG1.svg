@@ -1,0 +1,16 @@
+<svg width="831" height="847" viewBox="0 0 831 847" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.6" filter="url(#filter0_f_15_1930)">
+<circle cx="432.622" cy="414.5" r="232.5" fill="url(#paint0_radial_15_1930)"/>
+</g>
+<defs>
+<filter id="filter0_f_15_1930" x="0.121826" y="-18" width="865" height="865" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_15_1930"/>
+</filter>
+<radialGradient id="paint0_radial_15_1930" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(432.622 414.5) rotate(90) scale(232.5)">
+<stop stop-color="#F77545"/>
+<stop offset="1" stop-color="#F63393"/>
+</radialGradient>
+</defs>
+</svg>
