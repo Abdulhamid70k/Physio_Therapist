@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Card container perspective */
+.flip-card {
+    perspective: 1000px;
+  }
+  
+  /* Inner container for flipping */
+  .flip-card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+  }
+  
+  /* Flip the card on hover */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front and back sides */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Back side styles */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
